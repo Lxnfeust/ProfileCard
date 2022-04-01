@@ -1,37 +1,57 @@
+
 <%#< id="notice"><%= notice %> </>
+<h1>View Card</h1>
 
-<p>
-  <strong>Fond:</strong>
-  <%= @profile_card.background %>
-</p>
+<div class="card">
+  <div class="final-show">
+    <div class="background-card">
+      <a>
+        <%# <strong>Fond:</strong> %>
+        <%= image_tag @profile_card.background %>
+      </a>
+    </div>
+  </div>
 
-<p>
-  <strong>Image de profil:</strong>
-  <%= @profile_card.picture %>
-</p>
 
-<p>
-  <strong>Prénom:</strong>
-  <%= @profile_card.first_name %>
-</p>
+  <div class="final-show">
+    <div class="profile-picture-card">
+      <p>
+        <%# <strong>Image de profil:</strong> %>
+        <%= image_tag @profile_card.picture %>
+      </p>
+    </div>
+  </div>
 
-<p>
-  <strong>Nom:</strong>
-  <%= @profile_card.last_name %>
-</p>
+  <div class="final-show">
+    <p>
+      <strong>Prénom:</strong>
+      <%= @profile_card.first_name %>
+    </p>
+  </div>
 
-<p>
-  <strong>Année de naissance:</strong>
-  <%= @profile_card.birth_year %>
-</p>
+  <div class="final-show">
+    <p>
+      <strong>Nom:</strong>
+      <%= @profile_card.last_name %>
+    </p>
+  </div>
 
-<p>
-  <strong>Activités:</strong>
-  <%= @profile_card.hobbies %>
-</p>
+  <div class="final-show">
+    <p>
+      <strong>Année de naissance:</strong>
+      <%= @profile_card.birth_year %>
+    </p>
+  </div>
 
+  <div class="final-show">
+    <p>
+      <strong>Activités:</strong>
+      <%= @profile_card.hobbies %>
+    </p>
+  </div>
+</div>
 
 <div class="instructions">
   <%= link_to 'Modifier', edit_profile_card_path(@profile_card) %> |
-  <%= link_to 'Retour à la page accueil', profile_cards_path %>
+  <%= link_to 'Valider', profile_cards_path %>
 </div>

@@ -38,7 +38,7 @@ h1 {
 }
 
 a {
-  margin-top: 600px;
+  margin-top: 0px;
 }
 
 p {
@@ -53,7 +53,11 @@ strong {
 
 .field {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0px;
+  margin-bottom: 0px;
+  align-items: center;
 }
 
 .actions {
@@ -62,6 +66,38 @@ strong {
 }
 
 .instructions {
+  display: flex;
   justify-content: center;
-  align-items: top;
+
+}
+
+.final-show {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 0px;
+  align-items: center;
+
+}
+
+
+
+.card {
+  padding: 100px 50px;
+  width: 30%;
+  margin: 0px auto;
+  border: #000000 5px;
+}
+
+.background-card {
+  width: 1px;
+  height: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-picture-card {
+
 }
