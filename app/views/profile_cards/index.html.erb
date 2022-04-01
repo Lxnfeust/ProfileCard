@@ -6,38 +6,37 @@
 <main>
 
 
-  <%= link_to 'New Profile Card', new_profile_card_path %>
+    <%= link_to 'Créer une carte'.html_safe, new_profile_card_path, class: "button"%>
+    <%# <%= link_to 'New Profile Card', new_profile_card_path %>
 
-  <table>
-    <thead>
-      <tr>
-        <br/>
-        <a>Voir les autres cartes de profil :</a>
-        <th>First name</th>
-        <th>Last name</th>
-        <th>Birth year</th>
-        <th>Hobbies</th>
-        <th colspan="3"></th>
-      </tr>
-    </thead>
 
-    <tbody>
-      <% @profile_cards.each do |profile_card| %>
+    <table>
+
+      <thead>
         <tr>
-
-          <td><%= profile_card.first_name %></td>
-          <td><%= profile_card.last_name %></td>
-          <td><%= profile_card.birth_year %></td>
-          <td><%= profile_card.hobbies %></td>
-          <td><%= link_to 'Show', profile_card %></td>
-          <td><%= link_to 'Edit', edit_profile_card_path(profile_card) %></td>
-          <td><%= link_to 'Destroy', profile_card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <br/>
+          <div class="view-other-cards">
+            <p><strong>Voir les autres cartes de profil : </strong></p>
+          </div>
+          <th>Nom de carte</th>
+          <th colspan="3"></th>
         </tr>
-      <% end %>
-    </tbody>
-  </table>
+      </thead>
 
-  <br>
+      <tbody>
+        <% @profile_cards.each do |profile_card| %>
+          <tr>
+            <td><%= profile_card.first_name %></td>
+            <td><%= link_to 'Show', profile_card %></td>
+            <td><%= link_to 'Edit', edit_profile_card_path(profile_card) %></td>
+            <td><%= link_to 'Destroy', profile_card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+
+    </table>
+
+    <br>
 
 
 

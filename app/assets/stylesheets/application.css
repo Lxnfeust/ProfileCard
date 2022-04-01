@@ -55,7 +55,7 @@ strong {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin: 0px;
+  margin-top: 30px;
   margin-bottom: 0px;
   align-items: center;
 }
@@ -78,13 +78,14 @@ strong {
   justify-content: flex-start;
   margin-bottom: 0px;
   align-items: center;
+  margin-top: 20px;
 
 }
 
 
 
 .card {
-  padding: 100px 50px;
+  padding: 80px 50px;
   width: 30%;
   margin: 0px auto;
   border: #000000 5px solid;
@@ -119,4 +120,46 @@ strong {
 
 .empty-space {
   margin: 50px;
+}
+
+.btn input {
+  background-color: #000000;
+  border-radius: 5px;
+  border: 5px double #000000;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  margin: 30px auto;
+  padding: 10px;
+  display: block;
+
+}
+
+.btn-create {
+  background-color: #000000;
+  border-radius: 5px;
+  border: 5px double #000000;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  margin: 30px auto;
+  padding: 10px;
+  display: block;
+}
+
+.button{
+  padding: 10px;
+  background-color: #000000;
+  color: white !important;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 30px auto;
+  display: block;
+  width: fit-content;
+}
+
+.view-other-cards {
+  display: flex;
+  justify-content: center;
+
 }
