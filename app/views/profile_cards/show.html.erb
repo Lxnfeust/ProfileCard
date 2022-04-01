@@ -1,34 +1,37 @@
-<p id="notice"><%= notice %></p>
+<%#< id="notice"><%= notice %> </>
 
 <p>
-  <strong>Background:</strong>
+  <strong>Fond:</strong>
   <%= @profile_card.background %>
 </p>
 
 <p>
-  <strong>Picture:</strong>
+  <strong>Image de profil:</strong>
   <%= @profile_card.picture %>
 </p>
 
 <p>
-  <strong>First name:</strong>
+  <strong>Prénom:</strong>
   <%= @profile_card.first_name %>
 </p>
 
 <p>
-  <strong>Last name:</strong>
+  <strong>Nom:</strong>
   <%= @profile_card.last_name %>
 </p>
 
 <p>
-  <strong>Birth year:</strong>
+  <strong>Année de naissance:</strong>
   <%= @profile_card.birth_year %>
 </p>
 
 <p>
-  <strong>Hobbies:</strong>
+  <strong>Activités:</strong>
   <%= @profile_card.hobbies %>
 </p>
 
-<%= link_to 'Edit', edit_profile_card_path(@profile_card) %> |
-<%= link_to 'Back', profile_cards_path %>
+
+<div class="instructions">
+  <%= link_to 'Modifier', edit_profile_card_path(@profile_card) %> |
+  <%= link_to 'Retour à la page accueil', profile_cards_path %>
+</div>

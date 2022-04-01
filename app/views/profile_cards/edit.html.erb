@@ -2,5 +2,8 @@
 
 <%= render 'form', profile_card: @profile_card %>
 
-<%= link_to 'Show', @profile_card %> |
-<%= link_to 'Back', profile_cards_path %>
+
+<div class="instructions">
+  <%= link_to 'Afficher', @profile_card %> |
+  <%= link_to 'Valider', profile_cards_path %>
+</div>

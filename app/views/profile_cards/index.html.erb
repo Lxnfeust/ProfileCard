@@ -1,13 +1,18 @@
 <header>
-  <p id="notice"><%= notice %></p>
+  <%# <div class="instructions"> %>
   <h1>Profile Cards</h1>
 </header>
 
 <main>
 
+
+  <%= link_to 'New Profile Card', new_profile_card_path %>
+
   <table>
     <thead>
       <tr>
+        <br/>
+        <a>Voir les autres cartes de profil</a>
         <th>Background</th>
         <th>Picture</th>
         <th>First name</th>
@@ -37,6 +42,6 @@
 
   <br>
 
-  <%= link_to 'New Profile Card', new_profile_card_path %>
+
 
 </main>
