@@ -2,12 +2,16 @@
 <%#< id="notice"><%= notice %> </>
 <h1>View Card</h1>
 
-<div class="card">
+
+<div class="empty-space">
+</div>
+
+<div class="card" style="background-image: url('<%= @profile_card.background %>')">
   <div class="final-show">
     <div class="background-card">
       <a>
         <%# <strong>Fond:</strong> %>
-        <%= image_tag @profile_card.background %>
+
       </a>
     </div>
   </div>
@@ -15,10 +19,10 @@
 
   <div class="final-show">
     <div class="profile-picture-card">
-      <p>
+
         <%# <strong>Image de profil:</strong> %>
         <%= image_tag @profile_card.picture %>
-      </p>
+
     </div>
   </div>
 

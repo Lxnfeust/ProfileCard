@@ -87,17 +87,36 @@ strong {
   padding: 100px 50px;
   width: 30%;
   margin: 0px auto;
-  border: #000000 5px;
+  border: #000000 5px solid;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5%;
 }
 
 .background-card {
-  width: 1px;
-  height: 1px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: fit-content;
+  height: 100%;
+}
+.background-card img {
+  object-fit: contain;
+  object-position: center;
+  height: 100%;
 }
 
-.profile-picture-card {
 
+
+.profile-picture-card {
+  width: fit-content;
+  height: 100px;
+}
+.profile-picture-card img {
+  object-fit: contain;
+  object-position: center;
+  height: 100%;
+}
+
+
+
+.empty-space {
+  margin: 50px;
 }

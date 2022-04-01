@@ -12,9 +12,7 @@
     <thead>
       <tr>
         <br/>
-        <a>Voir les autres cartes de profil</a>
-        <th>Background</th>
-        <th>Picture</th>
+        <a>Voir les autres cartes de profil :</a>
         <th>First name</th>
         <th>Last name</th>
         <th>Birth year</th>
@@ -26,8 +24,7 @@
     <tbody>
       <% @profile_cards.each do |profile_card| %>
         <tr>
-          <td><%= profile_card.background %></td>
-          <td><%= profile_card.picture %></td>
+
           <td><%= profile_card.first_name %></td>
           <td><%= profile_card.last_name %></td>
           <td><%= profile_card.birth_year %></td>
