@@ -3,6 +3,10 @@
   <h1>Profile Cards</h1>
 </header>
 
+<div class="card-image">
+  <%= image_tag 'https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F0e345515-0dbb-4ab7-afdf-897c154f282f%2FUntitled.png?table=block&id=1ce91531-991d-44f9-acd6-252153380380&spaceId=2b05fb9e-59eb-466c-a39b-26975048f356&width=1530&userId=aed7305d-bf21-47c3-a179-e9e251f13ace&cache=v2' %>
+</div>
+
 <main>
 
 
@@ -16,22 +20,24 @@
         <tr>
           <br/>
           <div class="view-other-cards">
-            <p><strong>Voir les autres cartes de profil : </strong></p>
+            <p><strong>Voir les autres cartes de profil : <br/></strong></p>
+            <th colspan="3"></th>
           </div>
-          <th>Nom de carte</th>
-          <th colspan="3"></th>
         </tr>
       </thead>
 
       <tbody>
-        <% @profile_cards.each do |profile_card| %>
-          <tr>
-            <td><%= profile_card.first_name %></td>
-            <td><%= link_to 'Show', profile_card %></td>
-            <td><%= link_to 'Edit', edit_profile_card_path(profile_card) %></td>
-            <td><%= link_to 'Destroy', profile_card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-          </tr>
-        <% end %>
+        <div class="other-cards">
+          <p>Nom de la carte</p>
+          <% @profile_cards.each do |profile_card| %>
+            <tr>
+              <td><%= profile_card.first_name %></td>
+              <td><%= link_to 'Show', profile_card %></td>
+              <td><%= link_to 'Edit', edit_profile_card_path(profile_card) %></td>
+              <td><%= link_to 'Destroy', profile_card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+          <% end %>
+        </div>
       </tbody>
 
     </table>
