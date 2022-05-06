@@ -1,1 +1,0 @@
-postdeploy : rails db:migrate
